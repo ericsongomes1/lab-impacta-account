@@ -36,7 +36,6 @@ public class AccountServiceImpl implements AccountService {
         if (account.isEmpty())
             throw new AccountDontExistsException(messageExceptionAccountDontExists,
                     descriptionExceptionAccountDontExists);
-
         return account.get();
     }
 
